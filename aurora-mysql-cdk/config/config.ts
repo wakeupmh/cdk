@@ -1,0 +1,41 @@
+export const CONFIGS = {
+  serviceName: 'devops-database',
+  projectName: 'aurora-mysql',
+  ssmParameters: {},
+  auroraDatabase: {
+    instances: ['aurora-mysql'],
+  },
+  vpc: {
+    tagVpc: 'my-workload-vpc',
+  },
+  dev: {
+    account: '666',
+    region: 'us-east-1',
+    auroraPause: true,
+    snapshotId: '/currently/my/snapshot/arn',
+    instanceType: 't3.medium',
+    instances: 1,
+    backupRetention: 7,
+    backupPreferredWindow: '03:00-04:00',
+  },
+  staging: {
+    account: '666',
+    region: 'us-east-1',
+    auroraPause: true,
+    snapshotId: '/currently/my/snapshot/arn',
+    instanceType: 't3.small',
+    instances: 1,
+    backupRetention: 7,
+    backupPreferredWindow: '03:00-04:00',
+  },
+  prod: {
+    account: '666',
+    region: 'us-east-1',
+    auroraPause: false,
+    snapshotId: '/currently/my/snapshot/arn',
+    instanceType: 't3.large',
+    instances: 2,
+    backupRetention: 7,
+    backupPreferredWindow: '03:00-04:00',
+  },
+}
