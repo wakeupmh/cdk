@@ -1,0 +1,22 @@
+{
+  "name": "cdk-stuffs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint './src/**/*.{js,ts,tsx}' --quiet --fix",
+    "format": "prettier --write './src/**/*.ts'",
+    "build:app": "cd src && rm -rf dist && npm install && tsc && cp package.json dist && cd dist && npm install --only=prod",
+    "build:cdk": "npx cdk synth",
+    "diff:cdk": "npx cdk diff",
+    "deploy:cdk": "npx cdk deploy --all --ci --no-previous-parameters"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-cdk-lib": "^2.99.0",
+    "cdk-monitoring-constructs": "^6.2.1",
+    "constructs": "^10.3.0"
+  }
+}
