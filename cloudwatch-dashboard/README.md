@@ -1,0 +1,1 @@
+This PoC was create according to [Build Amazon CloudWatch Dashboards with AWS CDK for Serverless Services](https://www.ranthebuilder.cloud/post/build-amazon-cloudwatch-dashboards-aws-cdk-serverless#viewer-e9pp) article written by [Ran Isenberg](https://github.com/ran-isenberg)
